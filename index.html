@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Conversion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{background-color:deeppink}
+.Main{text-align: center;
+    background-color: deeppink;
+height:100%}
+.Header{text-align: center;}
+.Header_Logo{width: 40%;}
+.Header_Text{color: darkblue;}
+.Body{background-color: aquamarine;
+    display: flex;
+    flex-direction: row;}
+.Body-Div{flex: 33%;
+    margin: 5%;
+}
+.Body-Div-Label{  text-decoration: underline;
+ font-size: 25px;
+color: deeppink;}
+.Body-Div-Input{          
+          width: 100px;
+            height: 27px;
+            background: white;
+            border-radius: 7px;
+            text-align: center;}
+
+
+@media (max-width: 800px) {
+
+    .Body{flex-direction: column;}
+
+}
+</style>
+</head>
+<body>
+
+    <div class="Main">
+        <div class="Header">
+            <img class="Header_Logo" src="header_logo.png">
+            <h1 class="Header_Text">Temperature Convertor</h1>
+        </div>
+        <div class="Body">
+                <div class="Body-Div">
+                   <label class="Body-Div-Label">Celsius</label><br/>
+                   <input class="Body-Div-Input" type="number" id="celsius">
+                </div>
+
+                <div class="Body-Div">
+                    <label class="Body-Div-Label">Fahrenheit</label></br>
+                    <input class="Body-Div-Input" type="number" id="fahrenheit">
+                </div>
+      
+                <div class="Body-Div">
+                    <label class="Body-Div-Label">Kelvin</label></br>
+                    <input class="Body-Div-Input" type="number" id="kelvin">
+                </div>
+        </div>
+        <div class="Footer">
+            <h2>This Website Is Designed By Swarnadeep Saha Poddar, As Part Of Task II Of Oasis Infobyte Intership</h2>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
+
